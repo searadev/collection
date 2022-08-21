@@ -160,7 +160,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstName\": \"Luis Felipe\",\r\n    \"lastName\": \"de Amparo\",\r\n    \"date\": \"15/06/2022\",\r\n    \"text\": \"O tempo é curto, mas agradeço a chance de receber essa dádiva. Penso em minha mães. Ela é a pessoa que mais sofreu com a minha partida cedo. Me acidentei ao chocar-me com um carro que veio em alta velocidade: eu atravessava a rua. Foi um acidente. Mãe eu estou bem. Cuidaram do meu corpo, cuidaram de mim e dos meus machucados, de minhas fraturas que não tem importância neste momento. Aqui o corpo é Luz e pode ser muito feliz. Eu penso em vocês e me preocupo com você, maezinha. Dona Maria Isabel de Lourdes, eu Luís, seu filho, agradeço ao amor com que me tratou. Por tudo o que você foi e representou em minha vida. Mãe, eu aqui tenho paz, como você me ofertava aí: Estou bem e não sofro. Não gosto e me faz muito triste vê-la chorando pelos cantos. Quero pedir-lhe para sorrir, fazer os outros sorrirem; fale do amor que você conhece, seja a felicidade que você sabe ser. Isso vai me ajudar, vai te ajudar, pois o que você sente aí reflete em todos os lugares. Eu estou bem e te agradeço, mãe amada. Escrever me faz bem e agradeço à esta Casa. Um abraço a todos, do irmão de caminhada, de um filho, um irmão de todos:\",\r\n    \"motherName\": \"Maria Isabel de Lourdes\",\r\n    \"fatherName\": \"\",\r\n    \"wifeName\": \"\",\r\n    \"husbandName\": \"\",\r\n    \"daughterName\": \"\",\r\n    \"sonName\": \"\",\r\n    \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"raw": "{\r\n    \"fullName\": \"Luis Felipe de Amparo\",\r\n    \"date\": \"15/06/2022\",\r\n    \"text\": \"O tempo é curto, mas agradeço a chance de receber essa dádiva. Penso em minha mães. Ela é a pessoa que mais sofreu com a minha partida cedo. Me acidentei ao chocar-me com um carro que veio em alta velocidade: eu atravessava a rua. Foi um acidente. Mãe eu estou bem. Cuidaram do meu corpo, cuidaram de mim e dos meus machucados, de minhas fraturas que não tem importância neste momento. Aqui o corpo é Luz e pode ser muito feliz. Eu penso em vocês e me preocupo com você, maezinha. Dona Maria Isabel de Lourdes, eu Luís, seu filho, agradeço ao amor com que me tratou. Por tudo o que você foi e representou em minha vida. Mãe, eu aqui tenho paz, como você me ofertava aí: Estou bem e não sofro. Não gosto e me faz muito triste vê-la chorando pelos cantos. Quero pedir-lhe para sorrir, fazer os outros sorrirem; fale do amor que você conhece, seja a felicidade que você sabe ser. Isso vai me ajudar, vai te ajudar, pois o que você sente aí reflete em todos os lugares. Eu estou bem e te agradeço, mãe amada. Escrever me faz bem e agradeço à esta Casa. Um abraço a todos, do irmão de caminhada, de um filho, um irmão de todos:\",    \r\n    \"medium\": {\r\n        \"id\": 1\r\n    },\r\n    \"status\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -183,13 +183,20 @@
 					"name": "Update Psychography",
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstName\": \"Luis Felipe\",\r\n    \"lastName\": \"de Amparo\",\r\n    \"date\": \"15/06/2022\",\r\n    \"text\": \"O tempo é curto, mas agradeço a chance de receber essa dádiva. Penso em minha mães. Ela é a pessoa que mais sofreu com a minha partida cedo. Me acidentei ao chocar-me com um carro que veio em alta velocidade: eu atravessava a rua. Foi um acidente. Mãe eu estou bem. Cuidaram do meu corpo, cuidaram de mim e dos meus machucados, de minhas fraturas que não tem importância neste momento. Aqui o corpo é Luz e pode ser muito feliz. Eu penso em vocês e me preocupo com você, maezinha. Dona Maria Isabel de Lourdes, eu Luís, seu filho, agradeço ao amor com que me tratou. Por tudo o que você foi e representou em minha vida. Mãe, eu aqui tenho paz, como você me ofertava aí: Estou bem e não sofro. Não gosto e me faz muito triste vê-la chorando pelos cantos. Quero pedir-lhe para sorrir, fazer os outros sorrirem; fale do amor que você conhece, seja a felicidade que você sabe ser. Isso vai me ajudar, vai te ajudar, pois o que você sente aí reflete em todos os lugares. Eu estou bem e te agradeço, mãe amada. Escrever me faz bem e agradeço à esta Casa. Um abraço a todos, do irmão de caminhada, de um filho, um irmão de todos:\",\r\n    \"motherName\": \"Maria Isabel de Lourdes\",\r\n    \"fatherName\": \"\",\r\n    \"wifeName\": \"\",\r\n    \"husbandName\": \"\",\r\n    \"daughterName\": \"\",\r\n    \"sonName\": \"\",\r\n    \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"raw": "{\r\n    \"fullName\": \"Luis Felipe de Amparo\",\r\n    \"date\": \"15/06/2022\",\r\n    \"text\": \"O tempo é curto, mas agradeço a chance de receber essa dádiva. Penso em minha mães. Ela é a pessoa que mais sofreu com a minha partida cedo. Me acidentei ao chocar-me com um carro que veio em alta velocidade: eu atravessava a rua. Foi um acidente. Mãe eu estou bem. Cuidaram do meu corpo, cuidaram de mim e dos meus machucados, de minhas fraturas que não tem importância neste momento. Aqui o corpo é Luz e pode ser muito feliz. Eu penso em vocês e me preocupo com você, maezinha. Dona Maria Isabel de Lourdes, eu Luís, seu filho, agradeço ao amor com que me tratou. Por tudo o que você foi e representou em minha vida. Mãe, eu aqui tenho paz, como você me ofertava aí: Estou bem e não sofro. Não gosto e me faz muito triste vê-la chorando pelos cantos. Quero pedir-lhe para sorrir, fazer os outros sorrirem; fale do amor que você conhece, seja a felicidade que você sabe ser. Isso vai me ajudar, vai te ajudar, pois o que você sente aí reflete em todos os lugares. Eu estou bem e te agradeço, mãe amada. Escrever me faz bem e agradeço à esta Casa. Um abraço a todos, do irmão de caminhada, de um filho, um irmão de todos:\",    \r\n    \"medium\": {\r\n        \"id\": 1\r\n    },\r\n    \"status\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -340,7 +347,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"text\": \"teste\",\r\n  \"date\": \"13/08/2022\",\r\n  \"fullName\": \"Emmanuel\"\r\n}",
+							"raw": "{\r\n  \"text\": \"teste\",\r\n  \"date\": \"13/08/2022\",\r\n  \"fullName\": \"Emmanuel\",\r\n  \"medium\": {\r\n        \"id\": 1\r\n    },\r\n    \"status\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -376,7 +383,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"date\": \"2021-01-25T07:50:00Z\",\r\n  \"description\": \"Updated product description\",\r\n  \"name\": \"Updated product name\",\r\n  \"imgUrl\": \"\",\r\n  \"price\": 600.0,\r\n  \"categories\": [\r\n    {\r\n      \"id\": 1\r\n    },\r\n    {\r\n      \"id\": 3\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n    \"fullName\": \"Emmanuel\",\r\n    \"text\": \"teste\",\r\n    \"date\": \"13/08/2022\",\r\n    \"medium\": {\r\n        \"id\": 1,\r\n        \"firstName\": \"Ananda\",\r\n        \"lastName\": \"Silva\"\r\n    },\r\n    \"status\": false\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -384,13 +391,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/messages/1",
+							"raw": "{{host}}/messages/3",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"messages",
-								"1"
+								"3"
 							]
 						}
 					},
