@@ -90,7 +90,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/psychographys?page=0&size=12&sort=createdAt,asc",
+							"raw": "{{host}}/psychographys?page=0&size=12&sort=createdAt,asc&fullname=Silvia&text=depressão",
 							"host": [
 								"{{host}}"
 							],
@@ -109,6 +109,14 @@
 								{
 									"key": "sort",
 									"value": "createdAt,asc"
+								},
+								{
+									"key": "fullname",
+									"value": "Silvia"
+								},
+								{
+									"key": "text",
+									"value": "depressão"
 								}
 							]
 						}
@@ -265,7 +273,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/messages?page=0&linesPerPage=12&direction=ASC&orderBy=name&categoryId=3&name=PC Gamer",
+							"raw": "{{host}}/messages?page=0&size=12&sort=createdAt,asc&fullname=bezerra&text=Apóie%20teu%20irmão",
 							"host": [
 								"{{host}}"
 							],
@@ -278,24 +286,20 @@
 									"value": "0"
 								},
 								{
-									"key": "linesPerPage",
+									"key": "size",
 									"value": "12"
 								},
 								{
-									"key": "direction",
-									"value": "ASC"
+									"key": "sort",
+									"value": "createdAt,asc"
 								},
 								{
-									"key": "orderBy",
-									"value": "name"
+									"key": "fullname",
+									"value": "bezerra"
 								},
 								{
-									"key": "categoryId",
-									"value": "3"
-								},
-								{
-									"key": "name",
-									"value": "PC Gamer"
+									"key": "text",
+									"value": "Apóie%20teu%20irmão"
 								}
 							]
 						}
@@ -318,13 +322,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/messages/4",
+							"raw": "{{host}}/messages/1",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"messages",
-								"4"
+								"1"
 							]
 						}
 					},
@@ -1046,7 +1050,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/mediuns?page=0&size=12&sort=firstName",
+							"raw": "{{host}}/mediuns?page=0&size=12&sort=fullName",
 							"host": [
 								"{{host}}"
 							],
@@ -1064,7 +1068,7 @@
 								},
 								{
 									"key": "sort",
-									"value": "firstName"
+									"value": "fullName"
 								}
 							]
 						}
@@ -1116,7 +1120,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"firstName\": \"Marcelo\",\r\n  \"lastName\": \"Gomes\",\r\n  \"email\": \"marcelosuptec@gmail.com\",\r\n  \"password\": \"Java1982\",\r\n  \"roles\": [\r\n    {\r\n      \"id\": 1\r\n    },\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"fullName\": \"Marcelo Gomes\",\r\n  \"email\": \"marcelosuptec@gmail.com\",\r\n  \"password\": \"Java1982\",\r\n  \"roles\": [\r\n    {\r\n      \"id\": 1\r\n    },\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1152,7 +1156,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"firstName\": \"Marcelo\",\r\n  \"lastName\": \"Gomes\",\r\n  \"email\": \"alex@gmail.com\",\r\n  \"password\": \"Java1982\",\r\n  \"roles\": [\r\n    {\r\n      \"id\": 1\r\n    },\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"fullName\": \"Marcelo Gomes\",\r\n  \"email\": \"marcelo@gmail.com\",\r\n  \"password\": \"Java1982\",\r\n  \"roles\": [\r\n    {\r\n      \"id\": 1\r\n    },\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
