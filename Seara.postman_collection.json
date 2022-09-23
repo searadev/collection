@@ -90,7 +90,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/psychographys?page=0&size=12&sort=createdAt,asc&fullname=Silvia&text=depressão",
+							"raw": "{{host}}/psychographys?page=0&size=12&sort=createdAt,asc",
 							"host": [
 								"{{host}}"
 							],
@@ -109,14 +109,6 @@
 								{
 									"key": "sort",
 									"value": "createdAt,asc"
-								},
-								{
-									"key": "fullname",
-									"value": "Silvia"
-								},
-								{
-									"key": "text",
-									"value": "depressão"
 								}
 							]
 						}
@@ -139,13 +131,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/psychographys/1",
+							"raw": "{{host}}/psychographys/2",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"psychographys",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -204,7 +196,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"fullName\": \"Luis Felipe de Amparo\",\r\n    \"date\": \"15/06/2022\",\r\n    \"text\": \"O tempo é curto, mas agradeço a chance de receber essa dádiva. Penso em minha mães. Ela é a pessoa que mais sofreu com a minha partida cedo. Me acidentei ao chocar-me com um carro que veio em alta velocidade: eu atravessava a rua. Foi um acidente. Mãe eu estou bem. Cuidaram do meu corpo, cuidaram de mim e dos meus machucados, de minhas fraturas que não tem importância neste momento. Aqui o corpo é Luz e pode ser muito feliz. Eu penso em vocês e me preocupo com você, maezinha. Dona Maria Isabel de Lourdes, eu Luís, seu filho, agradeço ao amor com que me tratou. Por tudo o que você foi e representou em minha vida. Mãe, eu aqui tenho paz, como você me ofertava aí: Estou bem e não sofro. Não gosto e me faz muito triste vê-la chorando pelos cantos. Quero pedir-lhe para sorrir, fazer os outros sorrirem; fale do amor que você conhece, seja a felicidade que você sabe ser. Isso vai me ajudar, vai te ajudar, pois o que você sente aí reflete em todos os lugares. Eu estou bem e te agradeço, mãe amada. Escrever me faz bem e agradeço à esta Casa. Um abraço a todos, do irmão de caminhada, de um filho, um irmão de todos:\",    \r\n    \"medium\": {\r\n        \"id\": 1\r\n    },\r\n    \"status\": true\r\n}",
+							"raw": "{\r\n    \"fullName\": \"Um aluno aprendiz, candidato ao trabalho do bem com Jesus\",\r\n    \"text\": \"Nesta noite fria aí no plano físico, que o amor possa aquecer os corações, amparar, auxiliar e esclarecer aquele que vem em busca do alimento da alma, do Espírito imortal. Graças a Deus. É sempre bom estarmos juntos, não é mesmo? A cada encontro aprendemos um pouco mais, nos aperfeiçoamos na tarefa a qual fomos convidados a exercer. Hoje aqui viemos com o propósito de observar as diferentes terapias oferecidas neste hospital e escola ao mesmo tempo, pois aprendemos muito. As técnicas aqui utilizadas são diferentes das conhecidas enquanto encarnado. Mas o amor daquele que tem vontade de servir é o ingrediente que não deve faltar. Quando aqui chegamos fomos distribuídos em subgrupos para observar, registrar e anotar as dúvidas para, ao final, nos reunirmos novamente, onde cada um colocará as suas impressões. Quanta situação de aprendizado é ofertada desde as primeiras horas. Como vocês já sabem, o pronto socorro espiritual não para. O fluído vital se faz necessário para recolocar os irmãos na vida e, cada um, ao receber esses fluídos, com o auxílio do médium, percebe que pode movimentar o corpo. Alguns, pela vontade, restauram o corpo rapidamente, deixando essa terapia chamada de fisioterapia, e seguindo para outras: orientação, esclarecimento e encaminhamento. Sim, são muitos trabalhadores à disposição desse auxílio. É tudo muito bonito e, gratificante, ver a transformação. Nós, desse grupo, somos fortalecidos por Jesus e pelo desejo de servir na sua vinha. Muito obrigado por hoje, continuaremos aqui “estagiando”, pois as sementes serão plantadas em outras searas. Continuem o estudo de vocês para serem boas ferramentas. A disciplina, o estudo, a vontade e o amor são indispensáveis para o êxito da tarefa. Muito obrigado por hoje. Um aluno aprendiz, candidato ao trabalho do bem com Jesus! Até a próxima oportunidade, se for permitido relataremos a experiência do nosso grupo.\",\r\n    \"date\": \"18/08/2022\",\r\n    \"medium\": {\r\n        \"id\": 1,\r\n        \"fullName\": \"Ananda Silva\"\r\n    },\r\n    \"status\": false\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -212,13 +204,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/psychographys/1",
+							"raw": "{{host}}/psychographys/2",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"psychographys",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -538,7 +530,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"25_07_22 Fabiana\",\r\n  \"uri\": \"https://www.youtube.com/watch?v=7J221S66TNw\",\r\n  \"date\": \"25/07/2022\",\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"raw": "{\r\n  \"title\": \"25_07_22 Fabiana\",\r\n  \"url\": \"https://www.youtube.com/watch?v=7J221S66TNw\",\r\n  \"date\": \"25/07/2022\",\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -574,7 +566,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"25_07_22 Fabiana\",\r\n  \"uri\": \"https://www.youtube.com/watch?v=7J221S66TNw\",\r\n  \"date\": \"25/07/2022\",\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"raw": "{\r\n  \"title\": \"25_07_22 Fabiana\",\r\n  \"url\": \"https://www.youtube.com/watch?v=7J221S66TNw\",\r\n  \"date\": \"25/07/2022\",\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -725,7 +717,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"22ª Aula –Lei de Sociedade\",\r\n  \"uri\": \"https://www.youtube.com/watch?v=RTUxRvWlWDU\",\r\n  \"date\": \"02/08/2022\",\r\n  \"module\": {\r\n        \"id\": 1\r\n    },\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"raw": "{\r\n  \"title\": \"22ª Aula –Lei de Sociedade\",\r\n  \"url\": \"https://www.youtube.com/watch?v=RTUxRvWlWDU\",\r\n  \"date\": \"02/08/2022\",\r\n  \"module\": {\r\n        \"id\": 1\r\n    },\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -761,7 +753,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"22ª Aula –Lei de Sociedade\",\r\n  \"uri\": \"https://www.youtube.com/watch?v=RTUxRvWlWDU\",\r\n  \"date\": \"02/08/2022\",\r\n  \"module\": {\r\n        \"id\": 1\r\n    },\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"raw": "{\r\n  \"title\": \"22ª Aula –Lei de Sociedade\",\r\n  \"url\": \"https://www.youtube.com/watch?v=RTUxRvWlWDU\",\r\n  \"date\": \"02/08/2022\",\r\n  \"module\": {\r\n        \"id\": 1\r\n    },\r\n  \"medium\": {\r\n        \"id\": 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
